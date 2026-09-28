@@ -1,5 +1,5 @@
 import {v2 as cloudinary} from "cloudinary"
-import fs from "fs"
+import fs from "fs"  //fs: Node.js built-in File System module, used here to manage local files on your server disk.
 
 
   cloudinary.config({ 
