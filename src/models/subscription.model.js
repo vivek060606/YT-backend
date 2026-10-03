@@ -1,4 +1,4 @@
-import mongoose, {schema} from "mongoose"
+import mongoose, {Schema} from "mongoose";
 
 
 const subscriptionSchema = new Schema({
@@ -7,7 +7,7 @@ const subscriptionSchema = new Schema({
         ref:"User"
     },
     channel:{
-        type:Schema.Type.ObjectId,
+        type:Schema.Types.ObjectId,
         ref:"user"
     }
 },{timestamps: true})
