@@ -13,8 +13,8 @@ const router=Router()
 
  
 
-router.route("/register").post(
-    upload.fields([
+router.route("/register").post(  //And in app.js: app.use("/api/v1/users", userRouter);
+    upload.fields([               //The final URL becomes: /api/v1/users/register
         {
             name: "avatar",
             maxCount: 1

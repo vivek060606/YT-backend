@@ -92,3 +92,19 @@ userSchema.methods.generateRefreshToken = function(){
 }
 
 export const User = mongoose.model("User", userSchema)
+
+// A schema defines the structure of the data.
+// Model ->interacts with MongoDB eg -User.findByIdAndUpdate(...)
+// MongoDB is the actual database.
+
+// Mongoose is the library that helps Node.js work with MongoDB.
+// mongoose.model("User", ...)   -Create a model called User."
+// userSchema- >"Use this schema to define the structure and behavior of the User data."
+
+// mongoose.model("User", userSchema)
+//               ↓
+//           User model
+//               ↓
+//        MongoDB "users"
+//        collection
+
